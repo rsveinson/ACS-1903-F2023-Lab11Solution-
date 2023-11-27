@@ -28,6 +28,9 @@ public class FoodDriver{
         // or this way
         int calories = menu.get(3).getCalories();
         double kj = menu.get(3).energyInKJ(calories);
+        
+        // or even better
+        //double kj = menu.get(3).energyInKY();
         System.out.println("A cookie has " + kj + " KJ.");
         
     }
