@@ -51,9 +51,24 @@ public class Food{
         return st;
     }
     
+    /* one possible implementation of the
+     * energy method. This one is
+     * less desirable in that it takes an
+     * argument when it doesn't need to
+     */
     public double energyInKJ(int clories){
         return calories * 4.184;
-    }
+    }// end energy in kj
+    
+    /* this one is preferable because
+     * it uses the private field calories
+     * directly so there is no possiblity
+     * that the calculation will be made
+     * with incorrect data
+     */
+    public double energyInKJ(){
+        return calories * 4.184;
+    }// energy in kj no-arg
 
     
     
